@@ -9,4 +9,11 @@
     <string name="notification">Notification</string>
     <string name="help">Help</string>
     <string name="account">Account</string>
+    <string name="phone_number">phone number</string>
+    <string name="home">Home</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="my_fields">My Fields</string>
+    <string name="field_name">Field Name</string>
+    <string name="field_image">field image</string>
+    <string name="add_icon">Add icon</string>
 </resources>
