@@ -29,4 +29,6 @@
     <string name="enter_location">Enter location</string>
     <string name="location">Location</string>
     <string name="enter_field_name">Enter Field Name</string>
+    <string name="opening_date">Opening Date</string>
+    <string name="enter_date">Enter Date</string>
 </resources>
