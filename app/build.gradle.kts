@@ -1,12 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id ("com.google.dagger.hilt.android")
+    id ("com.google.devtools.ksp")
+    id("androidx.room")
+
 }
 
 android {
     namespace = "com.hundredcode.koorahour"
     compileSdk = 36
-
+    room {
+        schemaDirectory("$projectDir/schemas")
+    }
     defaultConfig {
         applicationId = "com.hundredcode.koorahour"
         minSdk = 24
@@ -45,4 +51,27 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(project(":domain"))
+
+    // Hilt
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.android.compiler)
+
+    // Room
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+
+    // دعم الـ Coroutines مع Room
+    implementation(libs.androidx.room.ktx)
+
+    // Lifecycle components
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    implementation(libs.circleimageview)
 }

@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "KooraHour"
 include(":app")
- 
+include(":data")
+include(":domain")
