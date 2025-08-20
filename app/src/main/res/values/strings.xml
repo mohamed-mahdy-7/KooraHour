@@ -16,4 +16,17 @@
     <string name="field_name">Field Name</string>
     <string name="field_image">field image</string>
     <string name="add_icon">Add icon</string>
+    <string name="add_field">Add Field</string>
+    <string name="upload">Upload</string>
+    <string name="add_images_of_your_field_to_attract_more_players">Add images of your field to attract more players.</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="_11v11">11v11</string>
+    <string name="_7v7">7v7</string>
+    <string name="_5v5">5v5</string>
+    <string name="pitch_types">Pitch Types</string>
+    <string name="enter_address">Enter address</string>
+    <string name="address">Address</string>
+    <string name="enter_location">Enter location</string>
+    <string name="location">Location</string>
+    <string name="enter_field_name">Enter Field Name</string>
 </resources>
