@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KooraHour">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.activity.PlayerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.OwnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.auth.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

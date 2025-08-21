@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">KooraHour</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="player_name_tv">Player_name_tv</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="help">Help</string>
+    <string name="account">Account</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="already_account">Already have an account?</string>
+    <string name="button_login_google_text">Continue with Google</string>
+    <string name="button_login_text">Continue</string>
+    <string name="create_account">Create Account</string>
+    <string name="edit_text_email_hint">Email</string>
+    <string name="edit_text_name_hint">Name</string>
+    <string name="edit_text_organisation_hint">Number Phone</string>
+    <string name="edit_text_password_hint">Password</string>
+    <string name="enter_your_email">Enter your username or email</string>
+    <string name="enter_your_username_or_email">Username or email<font color="#EF5350">*</font></string>
+    <string name="forget_password_dec">Don\'t worry! Please enter your email address linked with your account</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="forgot_passwords">Forgot Password?</string>
+    <string name="i_have_read_and_accept_the">I have read and accept the</string>
+    <string name="log_out">Log Out</string>
+    <string name="login_signUp">Login or Sign up</string>
+    <string name="no_account_text">"Don\'t have an account?"</string>
+    <string name="orLoginWith">Or, login with</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_text"><u>Privacy Policy and Cookie Policy.</u></string>
+    <string name="remember_password">Remember Password?</string>
+    <string name="save">Save</string>
+    <string name="send_code">Send Code</string>
+    <string name="sign_in">Login</string>
+    <string name="sign_in_to_continue">Please log in to continue and get the best from our app</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_now">Sign up</string>
+    <string name="sign_up_to_get_started">Please Sign up to continue and get the best from our app</string>
+    <string name="welcome">Welcome</string>
 </resources>
