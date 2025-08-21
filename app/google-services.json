@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "888728286181",
+    "project_id": "koorahour1",
+    "storage_bucket": "koorahour1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888728286181:android:bd486ddc84dc35128cf50c",
+        "android_client_info": {
+          "package_name": "com.hundredcode.koorahour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOwekuUej-alRc4P_xTb3Z3Gg3n8j9O28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

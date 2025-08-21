@@ -4,4 +4,22 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <color name="color_text_primary">#FFFFFF</color>
+    <color name="color_text_hint">#FFFFFF</color>
+
+    <style name="TextInputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#D9D7D7</item>
+        <item name="boxStrokeWidth">1.0dip</item>
+    </style>
+
+    <style name="MyTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <!-- border color -->
+        <item name="boxStrokeColor">#4CAF50</item>
+
+        <!-- The color of the label when it is collapsed and the text field is active -->
+        <item name="hintTextColor">#888</item>
+        <!-- The color of the label in all other text field states (such as resting and disabled) -->
+        <item name="android:textColorHint">#888</item>
+    </style>
 </resources>

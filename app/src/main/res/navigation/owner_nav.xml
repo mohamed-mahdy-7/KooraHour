@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/owner_nav"
+    app:startDestination="@id/owner_home_fragment">
+
+    <fragment
+        android:id="@+id/owner_home_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.owner.OwnerHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_owner_home">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/owner_my_field_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/owner_my_field_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.owner.MyFieldFragment"
+        android:label="My Field"
+        tools:layout="@layout/fragment_my_field">
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/add_field_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_field_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.owner.AddFieldFragment"
+        android:label="Add Field"
+        tools:layout="@layout/fragment_add_field">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/owner_profile_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/owner_profile_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.player.PlayerProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_player_profile_fragment" />
+
+</navigation>

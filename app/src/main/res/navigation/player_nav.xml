@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/player_nav"
+    app:startDestination="@id/player_home_fragment">
+    <fragment
+        android:id="@+id/player_home_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.player.PlayerHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_player_home">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/player_booking_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/player_booking_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.player.PlayerBookingFragment"
+        android:label="Booking"
+        tools:layout="@layout/fragment_player_booking">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/player_profile_fragment"
+        android:name="com.hundredcode.koorahour.ui.fragment.player.PlayerProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_player_profile_fragment" />
+</navigation>
