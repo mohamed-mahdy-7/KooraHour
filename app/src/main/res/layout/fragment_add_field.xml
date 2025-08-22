@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.AddFieldFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/add_field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add_field"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@id/add_field_button"
+            app:layout_constraintTop_toBottomOf="@id/add_field_title">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/field_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/field_name"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/field_name_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:hint="@string/enter_field_name"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/field_name_label" />
+
+                <TextView
+                    android:id="@+id/location_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/field_name_edit_text" />
+
+                <EditText
+                    android:id="@+id/location_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:hint="@string/enter_location"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/location_label" />
+
+                <TextView
+                    android:id="@+id/address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/location_edit_text" />
+
+                <EditText
+                    android:id="@+id/address_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:hint="@string/enter_address"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintTop_toBottomOf="@id/address_label" />
+
+                <TextView
+                    android:id="@+id/opening_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/opening_date"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toStartOf="@+id/closing_date_label"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/address_edit_text" />
+
+                <EditText
+                    android:id="@+id/opening_date_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:hint="@string/enter_date"
+                    android:inputType="date"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintEnd_toStartOf="@+id/closing_date_et"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/opening_date_label" />
+
+                <TextView
+                    android:id="@+id/closing_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/opening_date"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/opening_date_label"
+                    app:layout_constraintTop_toBottomOf="@id/address_edit_text" />
+
+                <EditText
+                    android:id="@+id/closing_date_et"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="8dp"
+                    android:autofillHints=""
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:hint="@string/enter_date"
+                    android:inputType="date"
+                    android:padding="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/opening_date_et"
+                    app:layout_constraintTop_toBottomOf="@id/closing_date_label" />
+
+                <TextView
+                    android:id="@+id/pitch_types_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/pitch_types"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/opening_date_et" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_5v5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_5v5"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pitch_types_label" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_7v7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_7v7"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkbox_5v5" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_11v11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/_11v11"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkbox_7v7" />
+
+                <TextView
+                    android:id="@+id/upload_images_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/upload_images"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkbox_11v11" />
+
+                <LinearLayout
+                    android:id="@+id/upload_images_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dashed_border"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/upload_images_label">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/upload_images"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="24dp"
+                        android:gravity="center"
+                        android:text="@string/add_images_of_your_field_to_attract_more_players"
+                        android:textColor="@color/gray" />
+
+                    <Button
+                        android:id="@+id/upload_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="@string/upload"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/add_field_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/blue"
+            android:text="@string/add_field"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
