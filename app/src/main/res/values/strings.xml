@@ -16,4 +16,8 @@
     <string name="field_name">Field Name</string>
     <string name="field_image">field image</string>
     <string name="add_icon">Add icon</string>
+    <string name="book">Book</string>
+    <string name="today">Today</string>
+    <string name="field_details">Field Details</string>
+    <string name="available_slots">Available Slots</string>
 </resources>
